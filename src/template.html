@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+        <div id="buttons-right">
+            <button id="add-todo">Add Todo</button>
+            <button id="add-project">Add Project</button>
+            <button id="display-all-todos">Display All Todos</button>
+        </div>
+    </header>
+    <div id="content">
+        <div id="sidebar">
+            <h2>Projects</h2>
+            <div id="projectList"></div>
+        </div>
+        <div id="toDoContent"></div>
+    </div>
+    <dialog id="toDoDialog">
+        <form method="dialog">
+            <label for="title">Task name</label>
+            <input type="text" id="title" name="title">
+            <label for="description">Task description</label>
+            <input type="text" id="description" name="description">
+            <label for="dueDate">Due date</label>
+            <input type="date" id="dueDate" name="dueDate">
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="notes">Task notes</label>
+            <input type="text" id="notes" name="notes">
+            <button id="toDoSubmitBtn" value="confirm">Submit</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="toDoEditDialog">
+        <form method="dialog">
+            <label for="title">Task name</label>
+            <input type="text" id="title" name="title">
+            <label for="description">Task description</label>
+            <input type="text" id="description" name="description">
+            <label for="dueDate">Due date</label>
+            <input type="date" id="dueDate" name="dueDate">
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="notes">Task notes</label>
+            <input type="text" id="notes" name="notes">
+            <button id="toDoEditSubmitBtn" value="confirm">Submit</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="addToProjectDialog">
+        <form method="dialog">
+            <select name="selectProject" id="selectProject"> </select>
+            <button id="addToProjectSubmitBtn" value="confirm">Submit</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="projectDialog">
+        <form method="dialog">
+            <label for="title">Project name</label>
+            <input type="text" id="title" name="title">
+            <label for="description">Project description</label>
+            <input type="text" id="description" name="description">
+            <button id="projectSubmitBtn" value="confirm">Submit</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
+    <dialog id="projectEditDialog">
+        <form method="dialog">
+            <label for="title">Project name</label>
+            <input type="text" id="title" name="title">
+            <label for="description">Project description</label>
+            <input type="text" id="description" name="description">
+            <button id="projectEditSubmitBtn" value="confirm">Submit</button>
+            <button value="cancel">Cancel</button>
+        </form>
+    </dialog>
+</body>
+
+</html>
